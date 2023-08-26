@@ -2,6 +2,7 @@
 
 const mainContainer = document.querySelector("#container");
 const keyContainer = document.querySelector("#key");
+let globalColor = "";
 
 function colorChange(event) {
     const target = event.target;
@@ -28,6 +29,7 @@ function getColor(event) {
     } else if (event.key === 'd') {
         keyContainer.style.backgroundColor = 'lightblue';
     } else if (event.key === "q") {
+        globalColor ="purple"
         const addDiv = document.createElement("div");
         addDiv.setAttribute(
             "style",
@@ -39,6 +41,7 @@ function getColor(event) {
         );
         mainContainer.appendChild(addDiv);
     } else if (event.key === "w") {
+        globalColor ="orange"
         const addDiv = document.createElement("div");
         addDiv.setAttribute(
             "style",
@@ -50,6 +53,7 @@ function getColor(event) {
         );
         mainContainer.appendChild(addDiv);
     } else if (event.key === "e") {
+        globalColor ="sienna"
         const addDiv = document.createElement("div");
         addDiv.setAttribute(
             "style",
